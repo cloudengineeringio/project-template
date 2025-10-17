@@ -20,7 +20,7 @@ Lorem ipsum dolor sit amet.
 - Amazon S3 Tables
 - AWS Lake Formation
 
-## Prerequisites
+# Prerequisites
 
 - Lorem ipsum dolor sit amet requirement
 - Consectetur adipiscing elit requirement
