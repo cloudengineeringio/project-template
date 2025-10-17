@@ -221,7 +221,12 @@ You will implement components gradually, testing after each phase.
 </tr>
 <tr>
 <td><strong>TASK-05</strong></td>
-<td><strong>Mock Lambda Function</strong><br/>Create a mock Lambda function that returns a sample response. This function will help you understand the required response structure for Lambda Proxy integration. The function should return a response with statusCode, headers (including CORS headers), and a body (JSON stringified). Test this mock function directly in the Lambda console to verify the response format. Example response structure: <code>{"statusCode": 200, "headers": {"Content-Type": "application/json", "Access-Control-Allow-Origin": "*"}, "body": "{\"message\": \"Hello from Lambda\"}"}</code></td>
+<td><strong>Mock Lambda Function</strong><br/>Create a mock Lambda function that returns a sample response. This function will help you understand the required response structure for Lambda Proxy integration. The function should return a response with statusCode, headers (including CORS headers), and a body (JSON stringified). Test this mock function directly in the Lambda console to verify the response format. Example response structure:
+
+```
+{"statusCode": 200, "headers": {"Content-Type": "application/json", "Access-Control-Allow-Origin": "*"}, "body": "{\"message\": \"Hello from Lambda\"}"}
+```
+</td>
 <td>⬜</td>
 </tr>
 <tr>
@@ -246,32 +251,32 @@ You will implement components gradually, testing after each phase.
 </tr>
 <tr>
 <td><strong>TASK-08</strong></td>
-<td><strong>List Tasks Function</strong><br/>Implement the "List Tasks" Lambda function (**GET** `/tasks`). Create a new Lambda function that queries DynamoDB for all tasks belonging to a user. Use AWS Lambda Powertools for structured logging. Configure the function to run in your VPC. The function should parse the user ID from the request context (we'll add real authentication later, for now use a test user ID). Return tasks in the proper Lambda Proxy format. Deploy and test this function through API Gateway.</td>
+<td><strong>List Tasks Function</strong><br/>Implement the "List Tasks" Lambda function (<strong>GET</strong> <code>/tasks</code>). Create a new Lambda function that queries DynamoDB for all tasks belonging to a user. Use AWS Lambda Powertools for structured logging. Configure the function to run in your VPC. The function should parse the user ID from the request context (we'll add real authentication later, for now use a test user ID). Return tasks in the proper Lambda Proxy format. Deploy and test this function through API Gateway.</td>
 <td>⬜</td>
 </tr>
 <tr>
 <td><strong>TASK-09</strong></td>
-<td><strong>Create Task Function</strong><br/>Implement the "Create Task" Lambda function (**POST** `/tasks`). Create a Lambda function that accepts task data in the request body, validates the input, generates a unique task ID, and stores it in DynamoDB. Include proper error handling for invalid input. Use Lambda Powertools for logging and metrics. Configure to run in VPC. Test through API Gateway by creating a task and verifying it appears in DynamoDB.</td>
+<td><strong>Create Task Function</strong><br/>Implement the "Create Task" Lambda function (<strong>POST</strong> <code>/tasks</code>). Create a Lambda function that accepts task data in the request body, validates the input, generates a unique task ID, and stores it in DynamoDB. Include proper error handling for invalid input. Use Lambda Powertools for logging and metrics. Configure to run in VPC. Test through API Gateway by creating a task and verifying it appears in DynamoDB.</td>
 <td>⬜</td>
 </tr>
 <tr>
 <td><strong>TASK-10</strong></td>
-<td><strong>Get Task by ID Function</strong><br/>Implement the "Get Task by ID" Lambda function (**GET** `/tasks/{id}`). Create a function that retrieves a specific task by its ID from DynamoDB. Handle the case where the task doesn't exist (return 404). Parse the task ID from the path parameters. Test through API Gateway with both valid and invalid task IDs.</td>
+<td><strong>Get Task by ID Function</strong><br/>Implement the "Get Task by ID" Lambda function (<strong>GET</strong> <code>/tasks/{id}</code>). Create a function that retrieves a specific task by its ID from DynamoDB. Handle the case where the task doesn't exist (return 404). Parse the task ID from the path parameters. Test through API Gateway with both valid and invalid task IDs.</td>
 <td>⬜</td>
 </tr>
 <tr>
 <td><strong>TASK-11</strong></td>
-<td><strong>Update Task Function</strong><br/>Implement the "Update Task" Lambda function (**PUT** `/tasks/{id}`). Create a function that updates an existing task with new data. Validate that the task exists before updating. Handle partial updates (only update fields that are provided). Return the updated task. Test through API Gateway by updating a task's status or description.</td>
+<td><strong>Update Task Function</strong><br/>Implement the "Update Task" Lambda function (<strong>PUT</strong> <code>/tasks/{id}</code>). Create a function that updates an existing task with new data. Validate that the task exists before updating. Handle partial updates (only update fields that are provided). Return the updated task. Test through API Gateway by updating a task's status or description.</td>
 <td>⬜</td>
 </tr>
 <tr>
 <td><strong>TASK-12</strong></td>
-<td><strong>Delete Task Function</strong><br/>Implement the "Delete Task" Lambda function (**DELETE** `/tasks/{id}`). Create a function that deletes a task from DynamoDB. Return 204 (No Content) on success or 404 if the task doesn't exist. Test through API Gateway by deleting a task and verifying it's removed from DynamoDB.</td>
+<td><strong>Delete Task Function</strong><br/>Implement the "Delete Task" Lambda function (<strong>DELETE</strong> <code>/tasks/{id}</code>). Create a function that deletes a task from DynamoDB. Return 204 (No Content) on success or 404 if the task doesn't exist. Test through API Gateway by deleting a task and verifying it's removed from DynamoDB.</td>
 <td>⬜</td>
 </tr>
 <tr>
 <td><strong>TASK-13</strong></td>
-<td><strong>Filtering Functions</strong><br/>Implement filtering functions (**GET** `/tasks/status/{status}` and **GET** `/tasks/due/{date}`). Create Lambda functions that use DynamoDB GSIs to filter tasks by status or due date. These functions should demonstrate how to query using secondary indexes. Test both endpoints through API Gateway with various filter values.</td>
+<td><strong>Filtering Functions</strong><br/>Implement filtering functions (<strong>GET</strong> <code>/tasks/status/{status}</code> and <strong>GET</strong> <code>/tasks/due/{date}</code>). Create Lambda functions that use DynamoDB GSIs to filter tasks by status or due date. These functions should demonstrate how to query using secondary indexes. Test both endpoints through API Gateway with various filter values.</td>
 <td>⬜</td>
 </tr>
 </table>
