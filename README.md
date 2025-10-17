@@ -83,15 +83,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
 
-```
-User/Client
-    ↓
-First Service (Lorem Ipsum)
-    ↓
-Second Service (Lorem Ipsum)
-    ↓
-Third Service (Lorem Ipsum)
-```
 
 **Design Principles:**
 - Lorem ipsum dolor sit amet
