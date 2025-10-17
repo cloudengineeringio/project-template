@@ -14,11 +14,11 @@ Lorem ipsum dolor sit amet.
 
 # Tech Stack
 
-- First AWS Service - Lorem ipsum dolor sit amet
-- Second AWS Service - Consectetur adipiscing elit
-- Third Technology - Sed do eiusmod tempor
-- Fourth Tool - Ut labore et dolore magna
-- Fifth Framework - Quis nostrud exercitation
+- Amazon Lambda
+- AWS API Gateway
+- Amazon Athena
+- Amazon S3 Tables
+- AWS Lake Formation
 
 # Prerequisites
 
