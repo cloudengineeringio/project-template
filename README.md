@@ -2,7 +2,7 @@
 
 Your manager has assigned you to design and implement a complete solution using AWS services. You are expected to plan, build, and validate the solution following best practices — step by step.
 
----
+
 
 ## Project Details
 
@@ -11,13 +11,13 @@ Your manager has assigned you to design and implement a complete solution using 
 | **Difficulty** | `Advanced` |
 | **Provider** | `AWS` |
 | **Estimate** | `4–10 hours` |
-| **Tech Stack** | `AWS Lambda`, `Amazon API Gateway`, `Amazon DynamoDB`, `Amazon S3`, `AWS IAM`, `Amazon CloudWatch`, `AWS Cognito`, `Amazon VPC` |
+| **Tech Stack** | `AWS Lambda` `Amazon API Gateway` `Amazon DynamoDB` `Amazon S3` `AWS IAM` `Amazon CloudWatch` `AWS Cognito` `Amazon VPC` |
 | **Labels** | `Serverless` `API` `Compute` `Data` `Storage` `Monitoring` `Auth` |
 | **Prerequisites** | <ul><li>**AWS Account** — Create one with <a href="https://aws.amazon.com/free" target="_blank">AWS Free Tier</a> (no cost)</li><li>**AWS Management Console** familiarity and basic CLI operations</li><li>**IAM roles and policies** fundamentals understanding</li><li>**AWS CLI** installed and configured locally</li><li>**JSON and YAML** syntax knowledge</li><li>**Architecture diagrams** interpretation skills</li><li>**User authentication** basics</li></ul> |
 | **Learning Objectives** | <ul><li>Design and implement serverless applications using multiple AWS services</li><li>Create and configure RESTful APIs using Amazon API Gateway with Lambda Proxy integration</li><li>Implement AWS Lambda Powertools for logging, tracing, and metrics</li><li>Design a DynamoDB single-table architecture for efficient data access</li><li>Configure Lambda functions to run within a VPC with appropriate security</li><li>Set up VPC endpoints for secure service access</li><li>Implement user authentication with Amazon Cognito</li><li>Configure appropriate IAM roles and policies</li><li>Monitor application performance using CloudWatch</li><li>Deploy a static website to Amazon S3</li></ul> |
 | **Resources** | <ul><li><a href="https://docs.aws.amazon.com/lambda/latest/dg/welcome.html" target="_blank">AWS Lambda Developer Guide</a></li><li><a href="https://awslabs.github.io/aws-lambda-powertools-python/latest/" target="_blank">AWS Lambda Powertools Python</a></li><li><a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html#api-gateway-simple-proxy-for-lambda-output-format" target="_blank">Lambda Proxy Integration Response Format</a></li><li><a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html" target="_blank">Amazon API Gateway Developer Guide</a></li><li><a href="https://www.alexdebrie.com/posts/dynamodb-single-table/" target="_blank">DynamoDB Single Table Design</a></li><li><a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html" target="_blank">Amazon DynamoDB Developer Guide</a></li><li><a href="https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints.html" target="_blank">VPC Endpoints for AWS Services</a></li><li><a href="https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html" target="_blank">AWS Cognito Developer Guide</a></li><li><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html" target="_blank">Amazon S3 Static Website Hosting</a></li><li><a href="https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html" target="_blank">AWS X-Ray Developer Guide</a></li></ul> |
 
----
+
 
 ## Project Overview
 
@@ -44,7 +44,7 @@ A **fully functional serverless todo list application** featuring:
 | **Authentication** | Manages user identity and access | `AWS Cognito` |
 | **Monitoring** | Tracks application performance | `Amazon CloudWatch` |
 
----
+
 
 ## Architecture
 
@@ -69,7 +69,7 @@ The DynamoDB table will follow a single-table design pattern, where all applicat
 
 ![Architecture](images/diagram.png "Architecture diagram")
 
----
+
 
 ## Success Criteria
 
