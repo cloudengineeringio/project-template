@@ -1,4 +1,4 @@
-# TaskMaster: Serverless Todo List
+# To-Do List Application
 
 Your manager has assigned you to design and implement a complete solution using AWS services. You are expected to plan, build, and validate the solution following best practices — step by step.
 
