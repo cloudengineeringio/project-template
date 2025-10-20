@@ -11,7 +11,7 @@ Your manager has assigned you to design and implement a complete solution using 
 | **Difficulty** | `Advanced` |
 | **Provider** | `AWS` |
 | **Estimate** | `4–10 hours` |
-| **Tech Stack** | `AWS Lambda` • `Amazon API Gateway` • `Amazon DynamoDB` • `Amazon S3` • `AWS IAM` • `Amazon CloudWatch` • `AWS Cognito` • `Amazon VPC` |
+| **Tech Stack** | `AWS Lambda`, `Amazon API Gateway`, `Amazon DynamoDB`, `Amazon S3`, `AWS IAM`, `Amazon CloudWatch`, `AWS Cognito`, `Amazon VPC` |
 | **Labels** | `Serverless` `API` `Compute` `Data` `Storage` `Monitoring` `Auth` |
 | **Prerequisites** | <ul><li>**AWS Account** — Create one with <a href="https://aws.amazon.com/free" target="_blank">AWS Free Tier</a> (no cost)</li><li>**AWS Management Console** familiarity and basic CLI operations</li><li>**IAM roles and policies** fundamentals understanding</li><li>**AWS CLI** installed and configured locally</li><li>**JSON and YAML** syntax knowledge</li><li>**Architecture diagrams** interpretation skills</li><li>**User authentication** basics</li></ul> |
 | **Learning Objectives** | <ul><li>Design and implement serverless applications using multiple AWS services</li><li>Create and configure RESTful APIs using Amazon API Gateway with Lambda Proxy integration</li><li>Implement AWS Lambda Powertools for logging, tracing, and metrics</li><li>Design a DynamoDB single-table architecture for efficient data access</li><li>Configure Lambda functions to run within a VPC with appropriate security</li><li>Set up VPC endpoints for secure service access</li><li>Implement user authentication with Amazon Cognito</li><li>Configure appropriate IAM roles and policies</li><li>Monitor application performance using CloudWatch</li><li>Deploy a static website to Amazon S3</li></ul> |
